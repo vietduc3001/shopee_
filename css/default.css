@@ -25,6 +25,10 @@ html {
     border-radius: 2px ;
 }
 
+.active {
+    color: var(--primary-color);
+}
+
 /* grid */
 .grid {
     width: 100%;
@@ -49,7 +53,35 @@ html {
     padding: 0 8px;
 }
 
+.col-2-4 {
+    width: 20%;
+    padding: 8px;
+}
+
 .col-6 {
     width: 50%;
     padding: 0 8px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0 8px;
+}
+
+/* animation */
+.zoomIn {
+    animation: zoomIn ease-out .2s;
+    transform-origin: top right;
+}
+
+@keyframes zoomIn {
+    from {
+        /* right: 0; */
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }

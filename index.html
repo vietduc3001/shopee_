@@ -13,7 +13,7 @@
 <body>
     <!-- HEADER -->
     <header id="header">
-        <div class="grid">
+        <div class="grid header-container">
             <!-- NAV BAR -->
             <div class="nav-bar grid__row">
                 <ul class="grid__row">
@@ -21,13 +21,12 @@
                     <li class="nav-bar__join hover">Join as Seller</li>
                     <li class="nav-bar__download hover">
                         Download
-                        <div class="nav-bar__download-apps">
+                        <div class="nav-bar__download-apps border-2px">
                             <img src="./img/qrcode.png" alt="QR Code" class="qr-code">
                             <div class="apps grid__row">
                                 <img src="./img/appstore.png" alt="App Store" class="col-6 app-store">
                                 <img src="./img/ggplay.png" alt="CH Play" class="col-6 ch-play">
                                 <img src="./img/appgallery.png" alt="App Gallery" class="col-6 app-gallery">
-
                             </div>
                         </div>
                     </li>
@@ -51,6 +50,14 @@
                             <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
                         </svg>
                         Notifications
+                        <div class="notification border-2px zoomIn">
+                            <img src="./img/notification.png" alt="">
+                            <p>Log in to view notifications</p>
+                            <div class="res grid__row">
+                                <div class="col-6 res__sign-up">Sign Up</div>
+                                <div class="col-6 res__login">Login</div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-bar__help hover">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
@@ -63,10 +70,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
                             <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
                         </svg>
-                        English
+                        English                        
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
+                        <div class="language-option border-2px zoomIn">
+                            <div class="vietnamese col-12">Tiếng Việt</div>
+                            <div class="english col-12 active">English</div>
+                        </div>
                     </li>
                     <li class="nav-bar__sign-up hover">Sign Up</li>
                     <li class="nav-bar__login hover">Login</li>
@@ -84,7 +95,23 @@
                     </svg>
                 </div>
                 <div class="search border-2px grid__row">
-                    <input type="text" class="search-box" placeholder="Thêm 2 Mã freeship vào ví">
+                    <div class="search-box .grid__row">
+                        <input type="text" class="search-input col-12" placeholder="Search in this shop">
+                        <div class="search-history border-2px">
+                            <div class="search-title">Search History</div>
+                            <div class="search-history-words">
+                                <p>memoryzone</p>
+                                <p>dong ho</p>
+                            </div>
+                        </div>     
+                    </div>
+
+                    <div class="search-range grid__row">
+                        <p>In This Shop</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
                     <div class="search-glass border-2px">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -92,16 +119,60 @@
                     </div>
                 </div>
                 <div class="cart">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                    </svg>
-                    <div class="cart-list border-2px">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-list border-2px zoomIn">
                         <img src="./img/no-cart.png" alt="">
                         <p>No Products Yet</p> 
                     </div>
                 </div>
             </div>
+
+            <div class="test"></div>
         </div>
     </header>
+
+    <!-- Back -->
+    <div class="go-back grid">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
+        BACK TO SHOP HOME
+    </div>
+
+    <!-- Container -->
+    <div class="container grid">
+        <div class="grid__row">
+            <div class="categories col-2">
+                <div class="shop-infor">
+                    <div class="shop-background"></div>
+                    <div class="shop-detail">
+                        <div class="shop-logo"><img src="./img/memoryzone.png" alt="MemoryZone"></div>
+                        <div class="shop-name">
+                            <span>MemoryZone Official Store</span>
+                        </div>
+                        <div class="shop-status">
+                            <span>Active 16 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Shop categories -->
+                <div class="shop-categories">
+                    <span>SHOP CATEGORIES</span>
+                    <div class="list-products">
+                        <div class="product-type active">All Products</div>
+                        <div class="product-type">Hot Deals</div>
+                        <div class="product-type">Ổ cứng SSD gắn trong</div>
+                        <div class="product-type">Ổ cứng SSD di động</div>
+                        <div class="product-type">Ổ cứng HDD di động</div>
+                        <div class="product-type">USB lưu trữ</div>
+                        <div class="product-type">Thẻ nhớ MicroSD</div>
+                        <div class="product-type">Thẻ nhớ SD</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
