@@ -21,6 +21,10 @@ html {
     color: var(--text-color);
 }
 
+.separator {
+    border-right: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
 .hover:hover {
     color: rgb(231, 231, 231);
     cursor: pointer;
@@ -105,6 +109,7 @@ html {
 .zoomIn {
     animation: zoomIn ease-out .2s;
     transform-origin: top right;
+    transform-origin: 90% 0;
     z-index: 10;
 }
 
